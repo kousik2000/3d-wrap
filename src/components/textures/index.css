@@ -19,6 +19,7 @@
     .fabric-button{
         border:none;
         width:130px;
+        background-color:transparent !important;
     } 
     .fabric{
         height:100px;
