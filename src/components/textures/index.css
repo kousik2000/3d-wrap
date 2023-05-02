@@ -1,0 +1,17 @@
+.fabric{
+    height:200px;
+    width:100%;
+    background-size: cover;
+    margin:5px;
+}
+.fabric:hover{
+    scale:0.9;
+}
+.fabric-button{
+    border:none;
+    width:200px;
+}
+.fabrics-button-container{
+    display: flex;
+    flex-wrap: wrap;
+}
