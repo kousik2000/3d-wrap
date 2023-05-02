@@ -30,3 +30,16 @@
 #three-canvas-container{
   height:100vh !important;
 }
+
+@media (max-width: 768px){
+  .main-container{
+    flex-direction: column;
+  }
+  .texture-container{
+    width:100%;
+    order:1;
+  }
+  .shirt-container{
+    width:100%;
+  }
+}
