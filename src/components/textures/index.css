@@ -15,3 +15,16 @@
     display: flex;
     flex-wrap: wrap;
 }
+@media (max-width: 768px){
+    .fabric-button{
+        border:none;
+        width:130px;
+    } 
+    .fabric{
+        height:100px;
+        width:100%;
+        background-size: cover;
+        margin:5px;
+    }
+
+}

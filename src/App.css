@@ -41,5 +41,9 @@
   }
   .shirt-container{
     width:100%;
+    height:50vh;
+  }
+  #three-canvas-container{
+    height:50vh !important;
   }
 }
