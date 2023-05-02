@@ -8,6 +8,13 @@ import './App.css'
 import {Model} from './components/shirt/Model.jsx'
 import { angleToRadians } from "./uitility/angle";
 
+import
+ { Analytics } 
+from
+ 
+'@vercel/analytics/react'
+;
+
 
 function App(){
     const [material,setMaterial]=useState("/fabrics/a.jpg")
@@ -18,6 +25,8 @@ function App(){
     }
     
     return(
+        <>
+        <Analytics/>
         <div className="bg-container">
             <div className="main-container">
                 <div className="texture-container">
@@ -35,6 +44,7 @@ function App(){
                 </div>
             </div>
         </div>
+        </>
     )
 }
 
