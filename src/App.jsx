@@ -17,6 +17,8 @@ function App() {
     console.log("app", materialUrl);
   };
 
+  const showOrbitControls = window.innerWidth > 768;
+
   const scale = useMemo(() => {
     if (window.innerWidth > 768) {
       return 1.3;
@@ -30,7 +32,7 @@ function App() {
     if (window.innerWidth > 768) {
       return [0, -8.5, 0];
     } else {
-      return [0, 8, 0];
+      return [0, 10, 0];
     }
   }, []);
 
@@ -46,7 +48,7 @@ function App() {
             <Canvas id="three-canvas-container" shadows>
               <Suspense fallback={null}>
                 <ambientLight args={["white", 5]} />
-                <OrbitControls />
+                {showOrbitControls && <OrbitControls />}
                 <perspectiveCamera position={[0, 0, 5]} />
                 <Model materialUrl={material} position={position} scale={scale} />
               </Suspense>
